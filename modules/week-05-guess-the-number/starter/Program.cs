@@ -2,9 +2,57 @@ namespace GuessTheNumber;
 
 public class Program
 {
+    private static int ReadIntInRange(string prompt, int min, int max)
+    {
+        int value;
+        bool isValid;
+        do
+        {
+            Console.Write(prompt);
+            value = int.TryParse(Console.ReadLine(), out value) ? value : 0;
+            isValid = value >= min && value <= max;
+            if (!isValid)
+            {
+                Console.WriteLine($"Please enter a number between {min} and {max}.");
+            }
+        }
+        while (!isValid);
+        return value;
+    }
+
     public static void Main(string[] args)
     {
         Console.WriteLine("=== Guess the Number: Loop Trio ===\n");
+        int maxValue = ReadIntInRange("Enter a max value (10-100): ", 10, 100);
+        int rounds = ReadIntInRange("How many rounds? (1-3): ", 1, 3);
+        for (int round = 1; round <= rounds; round++)
+        {
+            Console.WriteLine($"\nRound {round} of {rounds}");
+            Random random = new Random(maxValue + round);
+            int secret = random.Next(1, maxValue + 1);
+            int guess = 0;
+            int guessCount = 0;
+            while (guess != secret)
+            {
+                guess = ReadIntInRange($"Guess a number (1-{maxValue}) : ", 1, maxValue);
+                guessCount++;
+                if (guess < secret)
+                {
+                    Console.WriteLine("Too Low.");
+                }
+                else if (guess > secret)
+                {
+                    Console.WriteLine("Too High.");
+                }
+                else
+                {
+                    Console.WriteLine("Correct!");
+                    Console.WriteLine($"You got it in {guessCount} guesses.");
+                }
+            }
+        }
+
+        Console.WriteLine("\nThanks for playing!");
 
         // TODO 1: Complete the helper method named ReadIntInRange
         // Why: It avoids repeating the same input-validation code for max value and rounds.
