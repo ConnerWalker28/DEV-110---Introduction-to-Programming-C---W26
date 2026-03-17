@@ -34,7 +34,13 @@ public class StoryTemplate
     // - Return the formatted story
     public string GenerateStory(string[] words)
     {
-        throw new NotImplementedException();
+        // throw new NotImplementedException();
+        if (words.Length != Prompts.Length)
+        {
+            throw new ArgumentException("Number of words does not match number of prompts.");
+        }
+
+        return FormatStory(words);
     }
 
     // TODO 2: Implement FormatStory method (private helper)
@@ -44,6 +50,13 @@ public class StoryTemplate
     // - Return the formatted story
     private string FormatStory(string[] words)
     {
-        throw new NotImplementedException();
+        // throw new NotImplementedException();
+        object[] wordObjects = new object[words.Length];
+        for (int i = 0; i < words.Length; i++)
+        {
+            wordObjects[i] = words[i];
+        }
+
+        return string.Format(TemplateText, wordObjects);
     }
 }
