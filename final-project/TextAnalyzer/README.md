@@ -149,9 +149,9 @@ Your app must clearly demonstrate **all 8** of the following:
 
 _Fill out this section before submitting. Write in your own words — a few sentences per prompt is enough._
 
-**Name:**
+**Name:Conner Walker**
 
-**App Name:**
+**App Name:Text Analyser**
 
 ---
 
@@ -159,7 +159,7 @@ _Fill out this section before submitting. Write in your own words — a few sent
 
 _Describe your app in 1–3 sentences. What does it do? Who might use it?_
 
-Answer:
+Answer: I built an app to analyse text files for patterns and word length, as well as options to edit or filter the files. This would be used to filter lists such as usernames, passwords, lists, and other project outputs.
 
 ---
 
@@ -167,7 +167,7 @@ Answer:
 
 _Why did this app interest you? What made it feel like a good fit for what you know?_
 
-Answer:
+Answer: I chose this app because I needed to sort the output of some of my other projects, which output text files with lists of words.
 
 ---
 
@@ -175,21 +175,21 @@ Answer:
 
 _For each concept below, write one sentence describing where it appears in your code._
 
-**Variables & data types:**
+**Variables & data types:** Many variables and data types as inputs and outputs
 
-**If/else decisions:**
+**If/else decisions:** If/else to check for empty strings and for choices
 
-**Loops:**
+**Loops:** for loops to sort through data
 
-**Formatted string output:**
+**Formatted string output:** many different parts of my code format inputted strings and output them into either text files or other programs.
 
-**Array or List:**
+**Array or List:** Many different lists that store the text files and words inside them.
 
-**Custom class:**
+**Custom class:** Custom classes such as fileloaeder or analyser serve to assist the main program file
 
-**Named methods:**
+**Named methods:** There are plenty of named methods such as the ones in the analyser folder which are used to filter the data.
 
-**File I/O:**
+**File I/O:** Files are inputted in the Text folder and outputted into the outputs folder
 
 ---
 
@@ -197,7 +197,7 @@ _For each concept below, write one sentence describing where it appears in your 
 
 _What part of the project was hardest? How did you work through it?_
 
-Answer:
+Answer: Reading and Writing to files
 
 ---
 
@@ -205,7 +205,7 @@ Answer:
 
 _If you had more time, what would you change, add, or improve?_
 
-Answer:
+Answer: I would add more functionability and more choices to this program.
 
 ---
 
@@ -215,8 +215,8 @@ _Roughly how many hours did you spend total? Give a short breakdown._
 
 | Task                  | Time |
 | --------------------- | ---- |
-| Planning / DATA_MODEL |      |
-| Writing code          |      |
-| Debugging             |      |
-| Reflection / README   |      |
-| **Total**             |      |
+| Planning / DATA_MODEL |   15 Minutes   |
+| Writing code          |   1 Hour   |
+| Debugging             |   30 Minutes   |
+| Reflection / README   |   15 Minutes   |
+| **Total**             |    2 Hours  |
